@@ -19,14 +19,13 @@ class Rover:
         self.x_pos = 375
         self.y_pos = 375
         self.speed = 2
-
         self.rotation_angle = 0
+        
         self.rover = pg.Surface((25,50)).convert_alpha()
         self.rover.fill(COLOURS['white'])
 
         # - a copy is made of the original rover surface because rotating the same surface results in quality loss - #
         # - as a result the copy of the rover rotates the original each time instead of rotating the same image each time - #
-        self.rotation_angle = 0
         self.rover_copy = self.rover.copy()
         self.rover_copy_rect = self.rover_copy.get_rect()
         self.rover_copy_rect.center = (self.x_pos, self.y_pos)
