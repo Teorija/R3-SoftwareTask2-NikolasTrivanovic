@@ -2,7 +2,7 @@
 
 link to the video demo: https://streamable.com/nvfol5
 
-## Foreword: if this is being read before the final submission date
+## Foreword: 
 
 -in the video demo of the programs running the rover appears at a constant speed but that is just because I held the joystick fully down during the demo, the speed will vary (PWM) depending on how extended the joystick is. 
 
