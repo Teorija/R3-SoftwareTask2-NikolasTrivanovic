@@ -10,6 +10,8 @@ link to the video demo: https://streamable.com/nvfol5
 
 -if I have more time to spare I will also make it so the GUI of the rover is updated with the data sent back from the server. This way it's more accurate since the data that is actually received by the server is updating the clients GUI.
 
+-also forgot to check that the controller wasn't unplugged in the middle of data so I need to check before input is gathered from the controller that it is still connected
+
 ## Program
 
 -to run the programs you can run either the server first and have it wait for a client to connect or run the client first and wait for the server to start up
