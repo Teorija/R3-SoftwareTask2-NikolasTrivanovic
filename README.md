@@ -10,7 +10,7 @@ link to the video demo: https://streamable.com/nvfol5
 
 -if I have more time to spare I will also make it so the GUI of the rover is updated with the data sent back from the server. This way it's more accurate since the data that is actually received by the server is updating the clients GUI.
 
--also forgot to check that the controller wasn't unplugged in the middle of data so I need to check before input is gathered from the controller that it is still connected
+-also forgot to check if the controller was unplugged in the middle of a data collection from the controller so I need to check before input is gathered from the controller that it is still connected. Apart from making sure that the controller is always connected before trying to collect data the program needs to constantly check that the connection to the server is established before attempting to send data.
 
 ## Program
 
