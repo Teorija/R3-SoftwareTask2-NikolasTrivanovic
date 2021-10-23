@@ -12,6 +12,8 @@ link to the video demo: https://streamable.com/nvfol5
 
 -also forgot to check if the controller was unplugged in the middle of a data collection from the controller so I need to check before input is gathered from the controller that it is still connected. Apart from making sure that the controller is always connected before trying to collect data the program needs to constantly check that the connection to the server is established before attempting to send data.
 
+-the last thing I would do if I had time would be to have 4 seperate wheels displayed on the rover and change their colour (white - no motion, red - reverse, green - forward) depending on the motors direction.
+
 ## Program
 
 -to run the programs you can run either the server first and have it wait for a client to connect or run the client first and wait for the server to start up
