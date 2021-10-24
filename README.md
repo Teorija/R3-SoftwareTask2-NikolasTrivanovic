@@ -6,13 +6,13 @@ link to the video demo: https://streamable.com/nvfol5
 
 -in the video demo of the programs running the rover appears at a constant speed but that is just because I held the joystick fully down during the demo, the speed will vary (PWM) depending on how extended the joystick is. 
 
--for the client GUI translation of what is happening to the rover during turns the rover doesn't turn around the center of its body. I wasn't able to fix this is the time I allowed myself to work on the task since midterms are about to start and I need to focus on those. If I have time before the final submission date I will try to fix it. Also, the white rectangle boundary is just for show, the rover can drive off the screen I forgot to fix this too if I have time since it's beyond the scope of the task and I just did it because I was having fun. Instead of having the rover just drive inside the rectangle I thought about adding parallax scrolling so the rover could drive indefinitely leaving a trail behind it that it has travelled.
+-for the client GUI translation of what is happening to the rover during turns the rover doesn't turn around the center of its body. I wasn't able to fix this is the time I allowed myself to work on the task since midterms are about to start and I need to focus on those. If I have time before the final submission date I will try to fix it. Also, the white rectangle boundary is just for show, the rover can drive off the screen I forgot to fix this too if I have time since it's beyond the scope of the task and I just did it because I was having fun. Instead of having the rover just driving inside the rectangle, I thought about adding parallax scrolling so the rover could drive indefinitely leaving a trail behind it that it has traveled.
 
 -if I have more time to spare I will also make it so the GUI of the rover is updated with the data sent back from the server. This way it's more accurate since the data that is actually received by the server is updating the clients GUI.
 
--also forgot to check if the controller was unplugged in the middle of a data collection from the controller so I need to check before input is gathered from the controller that it is still connected. Apart from making sure that the controller is always connected before trying to collect data the program needs to constantly check that the connection to the server is established before attempting to send data.
+-also forgot to check if the controller was unplugged in the middle of a data collection from the controller so I need to check before the input is gathered from the controller that it is still connected. Apart from making sure that the controller is always connected before trying to collect data the program needs to constantly check that the connection to the server is established before attempting to send data.
 
--the last thing I would do if I had time would be to have 4 seperate wheels displayed on the rover and change their colour (white - no motion, red - reverse, green - forward) depending on the motors direction.
+-the last thing I would do if I had time would be to have 4 separate wheels displayed on the rover and change their colour (white - no motion, red - reverse, green - forward) depending on the direction of the motor.
 
 ## Program
 
@@ -44,5 +44,6 @@ After stopping the data transfer to the server the client can either close out o
 ## Server.py
 
 In the server.py file there is one class that runs the server that receives the data from the controller and prints out the data in a converted format. The converted format of the data represents 4 motors being powered with pulse width modulation and driving with differential steering. When the server.py file is started without the client started it will simply wait for the client to start and attempt a connection. If the client is already started when the server is running it will automatically connect and if the client closes while the server is running it will simply wait for them to start and connect again.
+
 
 
